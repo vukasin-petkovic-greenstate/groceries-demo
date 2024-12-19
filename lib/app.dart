@@ -2,17 +2,12 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 
-import 'about/about_screen.dart';
 import 'features/basket/basket.dart';
 import 'l10n/app_localizations.dart';
 import 'ui/ui.dart';
 
 final _router = GoRouter(
   routes: [
-    GoRoute(
-      path: '/about',
-      builder: (context, state) => const AboutScreen(),
-    ),
     GoRoute(
       path: '/basket',
       builder: (context, state) {
